@@ -1,0 +1,10 @@
+---
+- hosts: all   #todas as máquinas
+  become: yes  #Elevar privilegio 
+  tasks:
+    - name: "Criação do usuário suporte"
+      ansible.builtin.user:
+        name: suporte
+        comment: suporte
+        uid: 5000
+        group: root

@@ -1,0 +1,32 @@
+---
+- hosts: aprendizinfra
+  become: yes
+  tasks:
+    - name: Update and upgrade apt packages
+      become: true
+      apt:
+        upgrade: no
+        update_cache: yes
+        cache_valid_time: 86400
+    - name: 'Instalação de Pacotes'
+      apt:
+        pkg:
+          - vim
+        state: present
+      environment:
+        ftp_proxy: "http://10.254.0.254:8080"
+        http_proxy: "http://10.254.0.254:8080"
+        https_proxy: "http://10.254.0.254:8080"
+
+    - name: nano remove
+      apt: name=nano state=absent
+      environment:
+        ftp_proxy: "http://10.254.0.254:8080"
+        http_proxy: "http://10.254.0.254:8080"
+        https_proxy: "http://10.254.0.254:8080"
+
+          #    - name: equivalent of "apt-get update" 
+          # ansible.builtin.apt:
+          # update_cache: yes
+    
+

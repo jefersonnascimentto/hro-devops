@@ -1,0 +1,59 @@
+[web]
+172.17.177.101 ansible_user=vagrant ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[db]
+172.17.177.102 ansible_user=vagrant ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[aprendizinfra]
+192.168.2.224 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[stifabio]
+192.168.3.92 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[centroespecialidades]
+192.168.0.253 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[eletronica]
+192.168.1.25 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+[almoxarifado]
+192.168.2.118 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+192.168.1.162 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+192.168.2.164 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+
+[manutenção]
+192.168.3.245 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+[eletrica]
+192.168.0.146 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+
+[sesmetseguranca]
+192.168.1.31 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+192.168.2.116 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+192.168.0.153 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+192.168.2.113 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+
+[lactario]
+192.168.2.35 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+[estoque}
+192.168.2.84 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+
+[cozinha]
+192.168.2.121 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+192.168.0.176 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+[lavanderia]
+192.168.2.31 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa" 
+
+

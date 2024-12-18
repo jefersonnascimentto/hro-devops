@@ -1,0 +1,30 @@
+---
+- name: create users
+  hosts: centroespecialidades
+  become: true
+  tasks:
+    - name: infra
+      ansible.builtin.user:
+        name: infra
+        comment: STI
+        uid: 1040
+        group: root
+    - name: create diretorio infra
+      ansible.builtin.user:
+        name: infra
+        create_home: yes
+    - name: Create a 2048-bit SSH user user/.ssh/id_rsa
+      ansible.builtin.user:
+        name: infra
+        generate_ssh_key: yes
+        ssh_key_bits: 2048
+        ssh_key_file: .ssh/id_rsa
+    - name: Set authorized key taken from file
+      ansible.posix.authorized_key:
+        user: root
+        state: present
+        key: "{{ lookup('file', '/home/vagrant/.ssh/id_rsa.pub') }}"
+
+
+
+

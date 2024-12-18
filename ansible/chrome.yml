@@ -1,0 +1,13 @@
+---
+- name: install google chrome
+  hosts: stifabio
+  become: true 
+  tasks:
+
+   - name: Google Chrome
+     ansible.builtin.apt:
+       deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+     environment:    
+       ftp_proxy: "http://10.254.0.254:8080"
+       http_proxy: "http://10.254.0.254:8080"
+       https_proxy: "http://10.254.0.254:8080"
